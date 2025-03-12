@@ -28,6 +28,11 @@ To make any migration run command :
 npx prisma migrate dev --name any-migration-name
 ```
 
+To manually seed database run command:
+```bash
+npx prisma db seed
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
