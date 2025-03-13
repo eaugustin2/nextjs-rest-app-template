@@ -2,7 +2,21 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+- Install node modules:
+
+```bash
+npm install
+```
+
+- Set Database url in .env file
+
+- Generate JWT hash for next-auth:
+
+```bash
+npx auth secret
+```
+
+To run the development server:
 
 ```bash
 npm run dev
@@ -29,6 +43,7 @@ npx prisma migrate dev --name any-migration-name
 ```
 
 To manually seed database run command:
+
 ```bash
 npx prisma db seed
 ```
