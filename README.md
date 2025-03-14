@@ -1,16 +1,29 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+# NextJS REST API Template
+
+This is a NextJS REST API Template.
+
+## Dependencies
+
+- Next-auth
+- Prisma
+- Postgres
+- Eslint
+- bcrypt
+- Tailwind
+
 ## Getting Started
 
-- Install node modules:
+Install node modules:
 
 ```bash
 npm install
 ```
 
-- Set Database url in .env file
+Set Database url in .env file (described below)
 
-- Generate JWT hash for next-auth:
+Generate JWT hash for next-auth:
 
 ```bash
 npx auth secret
@@ -30,10 +43,6 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
 ## Prisma
 
 To make any migration run command :
@@ -48,14 +57,10 @@ To manually seed database run command:
 npx prisma db seed
 ```
 
-## Learn More
+## Environment Variables
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Name | Description  
+| DATABASE_URL | Postgres connection string, defaults to postgres://postgres@localhost/example
 
 ## Deploy on Vercel
 
