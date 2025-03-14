@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
 # NextJS REST API Template
 
 This is a NextJS REST API Template.
@@ -59,8 +57,10 @@ npx prisma db seed
 
 ## Environment Variables
 
-| Name | Description  
-| DATABASE_URL | Postgres connection string, defaults to postgres://postgres@localhost/example
+| Name            | Description                                                                                              |
+| --------------- | -------------------------------------------------------------------------------------------------------- |
+| DATABASE_URL    | Postgres connection string example "postgresql://username:password@localhost:port/postgres?schema=schema |
+| NEXTAUTH_SECRET | JWT Hash                                                                                                 |
 
 ## Deploy on Vercel
 
